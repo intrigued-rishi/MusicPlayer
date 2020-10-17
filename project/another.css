@@ -1,0 +1,340 @@
+/*notification bell*/
+#bell{
+   position:relative;
+   width:2rem;
+   height:2rem;
+   color:lightgrey;
+   font-size:1.5rem;
+}
+#bell:hover::after{
+   content:"this does nothing!just for show";
+   height:3rem;
+   width:12rem;
+   font-size:1rem;
+   color:#dea08a;
+   background-color:#6b554d;
+   border-radius:0.4rem; 
+   position:absolute;
+   left:1.5rem;
+   top:1.5rem;
+   text-align: center;
+}
+/*bell*/
+/*three windows*/
+#outer{
+   display: flex;
+   height:40vh;
+   align-items:flex-end;
+   justify-content:center;
+   transform-style: preserve-3d;
+   perspective: 1000px;
+   width:86%;
+   margin-left:7%;
+   margin-top:10vh;
+}
+.struct{
+   width:32%;
+   height:80%;
+   box-shadow: 0px 0px 8px 10px #3b3636;
+   opacity:0.8;
+}
+#div2 #p{
+   height:0%;
+   overflow:hidden;
+}
+#div2{
+   transform:scale(1.2);
+   background-color:cyan;
+   background-size:cover;
+   background-position: center top;
+   position:relative;
+   opacity:0.95 !important;
+   z-index: 2;
+}
+#outer div:hover{
+   transition:1s;
+   transform:scale(1.3);
+   z-index:3;
+   opacity:1 !important;
+}
+#div2:hover #p{
+   height:30%;
+}
+#coldplay{
+   background-image: url(coldplay.jpg);
+   background-size:cover;
+   background-position:top;
+}
+#green{
+   background-image: url(greenday.jpg);
+   background-size:cover;
+   background-position:center;
+
+}
+#beatles{
+   background-image: url(beatles.jpg);
+   background-size:cover;
+   background-position:center;
+}
+#Queen{
+   background-image: url(Queen.jpg);
+   background-size:cover;
+   background-position:center;
+}
+/*three windows*/
+/*playlist*/
+#playlist{
+   text-align: center;
+   margin-left:5%;
+   /*margin-top:8%;*/
+}
+#playlist>div i{
+   color:#be9c9c;
+   transform:scaleY(0);
+}
+#playlist>div:hover i{
+   transform: scaleY(1);
+   transition:0.1s;
+}
+#playlist>div:hover{
+   opacity:0.7;
+   transition:0.5s;
+   box-shadow:0px -5px 30px 15px grey inset;
+}
+#playlist>div i:hover{
+   transform:scale(1.5);
+}
+/*playlist*/
+/*song*/
+#cage{
+   margin-top:5%;
+   width:90%;
+   height:auto;
+   justify-content:space-around;
+}
+#cage:hover{
+   border:1px grey dotted;
+   transform: scale(1.05);
+   box-shadow: 0px 0px 5px 2px #C0C0C0;
+   transition:0.5s ease-in-out;
+}
+.bird{
+   width:30%;
+   margin:1rem 0rem 1rem 0rem;
+   height:7rem;
+   background-image: linear-gradient(45deg,#c94b4b,#4b134f);
+   color:#e1eec3;
+}
+.bird div i{
+   position:absolute;
+   left:27%;
+   top:29%;
+   right:35%;
+   bottom:35%;
+   color:lightgrey;
+   font-size:3rem;
+   transform:scale(0);
+}
+.bird div:hover i{
+   transition:1s;
+   transform:scale(1);
+}
+/*song*/
+/*album*/
+#album{
+   margin-left:7%;
+   width:90%;
+}
+#album>div{
+   margin-right:1%;
+   margin-bottom: 1%;
+   width:33%;
+}
+#album>div:hover img{
+  transform:scale(1.3);
+  transition:0.8s ease-in-out;
+}
+.abs{
+   position:absolute;
+   left:34%;
+   top:35%;
+   bottom:45%;
+   font-size:2rem;
+   color:#ff3a22;
+   transform:scaleY(0);
+   font-weight: bold;
+}
+#album>div:hover .abs{
+   transform: scaleY(1.0);
+   transition:0.8s;
+}
+/*album*/
+/*side section*/
+#side{
+    color: white;
+    font-size: 1.3rem;
+    position: fixed;
+    right:0px;
+    top:10%;
+    width: 25%;
+    height:85vh;
+    overflow:scroll;
+    margin-top:3rem;                                                                   
+}
+.hov a i:hover{
+   color:#d07171;
+   opacity:0.8;
+}
+#heart1:target,#heart2:target,#heart3:target,#heart4:target,#heart5:target,#heart6:target,#heart7:target,#heart8:target,#heart9:target,#heart10:target{
+  color:red;  
+}
+/*side section*/
+h5:hover{
+   color:#19bb1f;
+}
+a{
+   transition:2s;
+}
+.dimensions{
+   width:30%;
+}
+/*play*/
+#play{
+   position: fixed;
+   bottom:0%;
+   left:0%;
+   width:100vw;
+   height:10vh;
+   background-color:#155799;   /*#283c86;*/
+   color:white;
+   transform:scaleY(0);
+}
+#play:target{
+   transition:0.4s;
+   transform:scaleY(1);
+}
+#play:target #yo1{
+   animation:aniz ease-in-out 30s 1;
+}
+#play:target #yo2{
+   animation:anis ease-in-out 30s 1;
+}
+@keyframes aniz{
+   0%{
+      width:0%;
+   }
+   100%{
+      width:80%;
+   }
+}
+@keyframes anis{
+   0%{
+      width:80%; 
+   }
+   100%{
+      width:0%;
+   }
+}
+/*play*/
+/*play2*/
+        #aplayer{
+            position:fixed;
+            bottom: -100%;
+            left :0;
+            width : 100%;
+            margin : 0;
+            background-color:#155799;
+            color:black;
+            transition : all ease 0.5s;
+        }
+        #aplayer.showPlayer {
+            bottom : 0;
+        }
+        #close{
+         position:fixed;
+         left: 0;
+         bottom:8.5%;
+         font-size:0.8rem;
+         background-color:lightgrey;
+        }
+/*play2*/
+@media (max-width:1025px){
+   .bird div i{
+      left:20%;
+      top:30%;
+   }
+   #playlist{
+      height:25vh !important;
+   }
+   #outer{
+      height:35vh !important;
+   }
+   html{
+      font-size:13px !important;
+   }
+}
+@media (max-width:900px){
+   .struct{
+      height:30vh;
+   }
+   #side{
+      display: none !important;
+      overflow: hidden;
+   }
+   .bird div i{
+      left:30%;
+      top:30%;
+   }
+   main{
+      width: 100% !important;
+   }
+   #playlist{
+      width:90vw !important;
+      flex-wrap: wrap !important;
+      height:30vh !important;
+   }
+   #outer{
+      margin-top:12vh !important;
+   }
+   #cage{
+      margin-top:6%;
+   }
+   .bird{
+      width:45%;
+   }
+   html{
+      font-size: 12px !important;
+   }
+}
+@media (max-width:600px){
+   main{
+      width: 100%;
+   }
+   #playlist{
+      width:90vw !important;
+      flex-wrap: wrap !important;
+      height:40vh !important;
+   }
+   #playlist>div{
+      width:45% !important;
+      margin-bottom:3%; 
+   }
+   #album{
+      flex-wrap:wrap !important;
+   }
+   #album>div{
+      width:49%;
+   }
+   #cage{
+      margin-top:7%;
+   }
+   .bird{
+      width:85%;
+   }
+   #play{
+      height:8.5vh;
+   }
+   html{
+      font-size: 10px !important;
+   }
+}

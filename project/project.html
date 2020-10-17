@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="music player,music,entertainment,songs,play music,play songs,albums,music bands">
+    <meta name="author" content="Hrishikesh Mallick">
+    <script src="https://kit.fontawesome.com/f5c5a3b647.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="another.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="icon" type="image/jpg" href="music.jpg">
+</head>
+<body class="bg-dark">
+<main style="width:72%">
+    <!-- NAVIGATION -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark" style="border-bottom:1px lightgrey dashed;">
+      <a href="#"class="navbar-brand"><span style="color:#3fa743;"><img src="music.jpg" height="50rem" width="60rem" alt="music icon"></i></span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link"  href="#playlist" style="color:success !important;"><span style="color:#3fa743;"><h5>Favourites</h5></span><span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <i id="bell" class="fas fa-bell" style="width:2rem;height:2rem;color:lightgrey;font-size:1.5rem"></i>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <img src="ironman.jpg" height="40rem" width="40rem" alt="account" style="margin:0.7rem;border-radius:50%;">
+      </div>
+    </nav>
+    <!-- NAVIGATION -->
+    <div id="outer"><!-- three hovering window -->
+        <div id="div1" class="struct" style="background-image:url(cover1.jpg);background-size:cover;background-position:center;"></div>
+        <div id="div2" class="struct" style="background-image:url(rep.jpg);background-size:cover;background-position:center;"></div>
+        <div id="div3" class="struct" style="background-image:url(crowd2.jpg);background-size:cover;background-position:center;"></div>
+    </div><!-- three hovering window end -->
+    <!-- song -->
+        <div id="playsongs" style="font-size:2rem;margin-top:8%;margin-left:7%;margin-bottom:2%;color:#fb246d;border-left:4px solid #9c27b0;">Play Songs</div>
+        <div id="cage" class="d-flex mx-auto flex-wrap">
+          <div class="bird d-flex">
+            <div style="width:30%;position:relative;"><img src="crowd.jpg" alt="song" height="100%" width="100%"><a class="songs" href="#play"><i class="far fa-play-circle"></i></a></div><div class="align-self-center w-50 text-center"><h3>Music1</h3><br>Aug 11,2001</div><div class="text-center" style="width:20%;"><span style="font-size:3rem;">...</span><br>4:44</div>
+          </div>
+          <div class="bird d-flex">
+            <div style="width:30%;position:relative;"><img src="disc.jpg" alt="song" height="100%" width="100%"><a class="songs" href="#play"><i class="far fa-play-circle"></i></a></div><div class="align-self-center w-50 text-center"><h3>Music2</h3><br>Aug 11,2001</div><div class="text-center" style="width:20%;"><span style="font-size:3rem;">...</span><br>4:44</div>
+          </div>
+          <div class="bird d-flex">
+            <div style="width:30%;position:relative;"><img src="arr.jpg" alt="song" height="100%" width="100%"><a class="songs" href="#play"><i class="far fa-play-circle"></i></a></div><div class="align-self-center w-50 text-center"><h3>Music3</h3><br>Aug 11,2001</div><div class="text-center" style="width:20%;"><span style="font-size:3rem;">...</span><br>4:44</div>
+          </div>
+          <div class="bird d-flex">
+            <div style="width:30%;position:relative;"><img src="violin.jpg" alt="song" height="100%" width="100%"><a class="songs" href="#play"><i class="far fa-play-circle"></i></a></div><div class="align-self-center w-50 text-center"><h3>Music4</h3><br>Aug 11,2001</div><div class="text-center" style="width:20%;"><span style="font-size:3rem;">...</span><br>4:44</div>
+          </div>
+       </div>
+    <!-- song -->
+     <!-- music circular windows-->
+     <div style="font-size:2rem;margin-top:8%;margin-left:7%;margin-bottom:2%;color:#fb246d;border-left:4px solid #9c27b0;">Popular Artists</div>
+     <section id="playlist" class="d-flex justify-content-around flex-wrap" style="height:30vh;text-align:center;">
+         <div id="coldplay" class="rounded-circle d-flex justify-content-center position-relative" style="width:24%;">
+             <a class="my-auto" href="bootstrap.html"><i class="fas fa-play" style="font-size:2.3rem;"></i></a>
+             <div style="position:absolute;bottom:5%;margin:auto;font-size:auto;color:#F4F6F7;"><b>Coldplay</b></div>
+         </div>
+         <div id="green" class="rounded-circle bg-danger d-flex justify-content-center position-relative" style="width:24%;">
+             <a class="my-auto" href="bootstrap.html"><i class="fas fa-play" style="font-size:2.3rem;"></i></a>
+             <div style="position:absolute;bottom:5%;margin:auto;font-size:auto;color:#F4F6F7;"><b>Green Day</b></div>
+         </div>
+         <div id="beatles" class="rounded-circle bg-success d-flex justify-content-center position-relative" style="width:24%;">
+             <a class="my-auto" href="bootstrap.html"><i class="fas fa-play" style="font-size:2.3rem;"></i></a>
+             <div style="position:absolute;bottom:5%;margin:auto;font-size:auto;color:#F4F6F7;"><b>Beatles</b></div>
+         </div>
+         <div id="Queen" class="rounded-circle bg-info d-flex justify-content-center position-relative" style="width:24%;">
+             <a class="my-auto" href="bootstrap.html"><i class="fas fa-play" style="font-size:2.3rem;"></i></a>
+             <div style="position:absolute;bottom:5%;margin:auto;font-size:auto;color:#F4F6F7;"><b>Queen</b></div>
+         </div>
+    </section>
+    <div style="font-size:2rem;margin-top:8%;margin-left:7%;margin-bottom:2%;color:#fb246d;border-left:4px solid #9c27b0;">Popular Joner</div>
+    <div id="album" class="d-flex justify-content-center my-4" style="height:30vh;">
+       <div style="overflow: hidden;position: relative;">
+         <img src="westernmusic.jpg" alt="western music" style="width: 100%;height: 100%;">
+         <a href="https://www.youtube.com/results?search_query=hollywood+classic+songs" target="_blank"><div class="abs"><i>Classics</i></div></a>
+       </div>
+       <div style="overflow: hidden;position: relative;">
+         <img src="rock.jpg" alt="rock music" style="width: 100%;height: 100%;">
+         <a href="https://www.youtube.com/results?search_query=metallica" target="_blank"><div class="abs"><i>Metal</i></div></a>
+       </div>
+       <div style="overflow: hidden;position: relative;">
+         <img src="indian.jpeg" alt="indian music"style="width: 100%;height: 100%;">
+         <a href="https://www.youtube.com/results?search_query=pandit+ravi+shankar" target="_blank"><div class="abs"><i>Indian</i></div></a>
+       </div>
+    </div>
+    <!-- music circular windows -->
+</main>
+<!-- FAVOURITE -->
+<div id="side">
+    <div>
+       <div><h3 style="color:#fb246d;border-left:4px solid #9c27b0;padding-left:2px;float:left;">Playlist</h3></div><div style="float:right;margin-right:10%;">
+          <div class="dropdown" style="width:">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:lightgrey;">
+                queue
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Playlists</a>
+                <a class="dropdown-item" href="#">Favourite Songs</a>
+              </div>
+            </div>
+       </div>
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">01</div><div style="height:70%;width:20%;margin:0.5rem;"><img alt="song image" src="idiotjpg.jpg" style="height:100%;width:100%"></div><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>American Idiot</b></a><br>Green Day</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart1" style="color:white;"><i id="heart1" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">02</div><img src="dark1.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>Choo Lo</b></a><br>The Local Train</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart2" style="color:white;"><i id="heart2" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">03</div><img src="dark2.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>Hurricane</b></a><br>Bob Dylan</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart3" style="color:white;"><i id="heart3" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">04</div><img src="guns.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>21 Guns</b></a><br>Green Day</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart4" style="color:white;"><i id="heart4" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">05</div><img src="jude.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>Hey Jude</b></a><br>Beatles</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart5" style="color:white;"><i id="heart5" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">06</div><img src="quote.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>Alvida</b></a><br>KK</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart6" style="color:white;"><i id="heart6" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">07</div><img src="its.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>It's Late</b></a><br>Queen</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart7" style="color:white;"><i id="heart7" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">08</div><img src="numb.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>Numb</b></a><br>Linkin Park</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart8" style="color:white;"><i id="heart8" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">09</div><img src="floyd.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>Money</b></a><br>Pink Floyd</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart9" style="color:white;"><i id="heart9" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+    <div class="d-flex" style="height:13%;width:90%;">
+       <div class="d-flex align-items-center">
+           <div style="width:10%;text-align:center;">10</div><img src="dragon.jpg" alt="song image" style="height:70%;width:20%;margin:0.5rem;"><div style="font-size:1rem;width: 40%;"><a href="#play" style="color:white;"><b>Believer</b></a><br>Imagine Dragons</div><div class="hov" style="text-align:right;width:30%;"><a href="#heart10" style="color:white;"><i id="heart10" class="fas fa-heart"></i></a></div>
+       </div> 
+    </div>
+</div>
+<!-- FAVOURITE -->
+<!-- play -->
+<div id="play" class="d-flex">
+  <div style="width:24%;height:100%;">
+    <div class="d-flex align-items-center" style="height:100%;">
+           <div style="height:100%;width:33%;"><img src="crowd3.jpg" height="100%" width="100%"></div><div style="font-size:1rem;width:37%;margin-left:4%;"><b>Music</b><br>Band</div><div class="hov" style="text-align:right;width:30%;"><i id="heart4" class="fas fa-heart"></i></div>
+        </div> 
+  </div>
+  <div style="width:48%;height:100%;display:flex;flex-direction:column;">
+    <div class="text-center" style="font-size:2rem;height:50%;"><i class="fas fa-backward"></i><i class="far fa-pause-circle mx-3"></i><i class="fas fa-forward mx-2"></i></div>
+    <div class="d-flex justify-content-center align-items-center" style="height:50%;">
+      0:00&ensp;<div id="yo1" style="width:20%;height:9%;background-color:#ff1d58;"></div><div style="width:1%;z-index:2;"><i class="fas fa-circle" style="color:#00DDFF;"></i></div><div id="yo2" style="width:50%;height:9%;background-color:#a0d2eb;"></div>&ensp;4:44
+    </div>
+  </div>
+  <div style="width:23%;height:20%;align-self:center;font-size:1.3rem;display:flex;">
+    <i class="fas fa-volume-up mx-1"></i><div style="width:20%;height:10%;align-self:center;background-color:#ff1d58;"></div><div style="width:50%;height:10%;align-self:center;background-color:white;"></div><i class="fas fa-random mx-3"></i>
+  </div>
+  <div style="width:5%;font-size:1.4rem;"><a href="#"><i class="far fa-times-circle text-warning"></i></a></div>
+ </div>
+ <!-- play -->
+ <!-- play2 -->
+ <!-- play2 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
